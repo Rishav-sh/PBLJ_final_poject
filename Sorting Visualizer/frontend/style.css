@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.controls {
+  margin: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button {
+  background-color: #ff5722;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+#array-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  margin-top: 30px;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.bar {
+  background: #ffc107;
+  width: 30px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bar span {
+  position: absolute;
+  top: -25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.output-box {
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.562);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
